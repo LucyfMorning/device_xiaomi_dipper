@@ -128,6 +128,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     XiaomiPocketMode
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePkgs
+
 # Secure element
 PRODUCT_PACKAGES += \
     SecureElement
