@@ -7,12 +7,13 @@
 $(call inherit-product, device/xiaomi/dipper/device.mk)
 
 # Inherit some common Evolution X stuff.
+EVO_BUILD_TYPE := OFFICIAL
 IS_PHONE := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_SUPPORTS_QUICK_TAP := true
-TADGET_SHIP_PREBUILT_APEX := true
+TARGET_SHIP_PREBUILT_APEX := true
 DEVICE_REQUIRES_CARRIER_APPS := true
 
 $(call inherit-product, vendor/evolution/config/common_full_phone.mk)
