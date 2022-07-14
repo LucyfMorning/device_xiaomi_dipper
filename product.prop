@@ -7,6 +7,10 @@ persist.camera.sat.fallback.dist.d=5
 persist.camera.sat.fallback.luxindex=310
 persist.camera.sat.fallback.lux.d=50
 
+#.PPUI Official stuffs
+ro.pixelplusui.maintainer=LuMorningStarr
+org.pixelplusui.device=Mi 8
+
 # SurfaceFlinger
 ro.surface_flinger.has_HDR_display=true
 ro.surface_flinger.wcg_composition_dataspace=143261696

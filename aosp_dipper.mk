@@ -6,11 +6,14 @@
 
 $(call inherit-product, device/xiaomi/dipper/device.mk)
 
-# Inherit some common PixelExperience stuff.
+# Inherit some common Evolution X stuff.
+IS_PHONE := true
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
 TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_USES_AOSP_RECOVERY := true
+TADGET_SHIP_PREBUILT_APEX := true
+DEVICE_REQUIRES_CARRIER_APPS := true
 
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
@@ -22,11 +25,5 @@ PRODUCT_MODEL := MI 8
 PRODUCT_MANUFACTURER := Xiaomi
 
 PRODUCT_SYSTEM_NAME := dipper
-
-BUILD_FINGERPRINT := "Xiaomi/dipper/dipper:8.1.0/OPM1.171019.011/V9.5.5.0.OEAMIFA:user/release-keys"
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="dipper-user 8.1.0 OPM1.171019.011 V9.5.5.0.OEAMIFA release-keys" \
-    TARGET_PRODUCT="dipper"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi

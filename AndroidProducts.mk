@@ -15,3 +15,8 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_dipper.mk
+
+COMMON_LUNCH_CHOICES := \
+    aosp_dipper-user \
+    aosp_dipper-userdebug \
+    aosp_dipper-eng 
