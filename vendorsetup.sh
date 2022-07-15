@@ -6,7 +6,7 @@ echo ""
 
 echo "cloning vendor blobs"
 git clone https://github.com/LucyfMorning/vendor_xiaomi_dipper vendor/xiaomi/dipper
-git clone https://github.com/LucyfMorning/vendor_xiaomi_sdm-845common vendor/xiaomi/sdm845-common
+git clone https://github.com/LucyfMorning/vendor_xiaomi_sdm845-common vendor/xiaomi/sdm845-common
 echo ""
 
 # Kernel
