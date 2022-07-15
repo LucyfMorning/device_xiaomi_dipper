@@ -6,7 +6,7 @@ echo ""
 
 echo "cloning vendor blobs"
 git clone https://github.com/LucyfMorning/vendor_xiaomi_dipper vendor/xiaomi/dipper
-git clone https://github.com/LucyfMorning/vendor_xiaomi_sdm845common vendor/xiaomi/sdm845-common
+git clone https://github.com/LucyfMorning/vendor_xiaomi_sdm-845common vendor/xiaomi/sdm845-common
 echo ""
 
 # Kernel
@@ -16,7 +16,7 @@ git clone --depth=1 https://gitlab.com/jjpprrrr/prelude-clang prebuilts/clang/ho
 echo ""
 
 # HAL's
-echo "removing and cloning Hal's pathc for sdm845"
+echo "removing and cloning Hal's patch for sdm845"
 rm -rf hardware/qcom-caf/sdm845/display
 rm -rf hardware/qcom-caf/sdm845/media
 git clone https://github.com/PixelExperience/hardware_qcom-caf_sdm845_display hardware/qcom-caf/sdm845/display
